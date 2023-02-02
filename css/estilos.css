@@ -119,6 +119,7 @@ nav ul li a{
     margin-top: 100px;
     justify-content: center;
     color: #000000;
+   
 }
 
 .container__cover{
@@ -150,6 +151,8 @@ nav ul li a{
     
 }}
 
+
+/**modohamb*/
 @media screen and (max-width: 760px){
 .cover p{
     margin-top: 10px;
@@ -191,7 +194,7 @@ nav ul li a{
     }
 }
 
-@media screen and (max-width: 920px){
+@media screen and (max-width: 760px){
     .container__vector img{
         width: 500px;
     }
@@ -297,12 +300,128 @@ li .sliderimg img{
     border: 1px solid rgb(201, 30, 129);
 }
 
+/******Modulo lista Hover*******/
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 
+    'Lucida Sans Unicode', Geneva, Verdana, sans-serif, serif
+}
+.moduhover{
+    background-color:#ffffff; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0rem;
+    margin-bottom: -120px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+
+.container h2{
+    
+    text-align: left;
+    padding: 50px;
+    font-size: 56px;
+    color:#000000;
+    letter-spacing:3px;
+}
+.container{
+    margin-top: -30px;
+   display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    min-height: 100vh;
+    width: 95vw;
+    height: auto;
+    text-align: left;
+    
+}
+
+.container ul img {
+    border: 1px solid black;
+    width: 100%;
+}
+
+.container ul li{
+    list-style: none;
+}
+.container ul li a{
+    display: block;
+    padding: 10px 0;
+    text-decoration: none;
+    color: #000000;
+    background: #ffffff;
+    text-transform: uppercase;
+    transition: 1s;
+    border: 1px solid rgb(255, 255, 255)
+}
+.container:hover ul li a {
+  color: rgb(110, 117, 117);
+  
+}
+.container ul li a:hover {
+    color: rgb(0, 0, 0);
+    transform: scale(1.1);
+    background: #48bbbe;
+    border: 1px solid aqua
+    
+  }
+.container ul li a:hover::before{
+    content: '';
+    width: 0;
+    height: 0;
+    position: absolute;
+    left: -1.5px;
+    top: 12.5px;
+    border-width:0 0 11.5px 11.5px;
+    border-color: transparent transparent aqua transparent;
+
+
+}
+.container ul li a:hover:after{
+    content: '';
+    width: 0;
+    height: 0;
+    position: absolute;
+    right: -1.5px;
+    top: 12.5px;
+    border-width: 11.5px 0 0 11.5px;
+    border-color: transparent transparent transparent  aqua;
+     
+
+}
+
+
+
+
+
 
 @media (min-width:768px){
 
     /***Novedades**/
+    
+.modunovedades{
+    background-color:#ffffff;
+    width: min(60rem,100%); 
+    margin: 0 auto;
+    padding: 5rem;
+    border-radius: 0rem;
+}
+    .novedades h1{
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        max-width: 400px;
+        font-size: 150px;
+        font-weight: 900;
+        color: #000000;
+        align-items: center;
+        
+    }}
     .container__cards{
-        max-width: 1200px;
+        max-width: 1500px;
         margin: auto;
         margin-top: 0px;
         display: flex;
@@ -404,105 +523,9 @@ li .sliderimg img{
     }
     
     
-    
-
-}
-
-/******Modulo lista Hover*******/
-body{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    min-height: 100vh;
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 
-    'Lucida Sans Unicode', Geneva, Verdana, sans-serif, serif
-}
-.moduhover{
-    background-color:#ffffff; 
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 0rem;
-    margin-bottom: -120px;
-}
 
 
-.container h2{
-    
-    text-align: left;
-    padding: 50px;
-    font-size: 56px;
-    color:#000000;
-    letter-spacing:3px;
-}
-.container{
-    margin-top: -30px;
-   display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    min-height: 100vh;
-    width: 95vw;
-    height: auto;
-    text-align: left;
- 
-    /*tststborder: 1px solid yellow;*/
-    
-}
 
-.container ul img {
-    border: 1px solid black;
-    width: 100%;
-}
-
-.container ul li{
-    list-style: none;
-}
-.container ul li a{
-    display: block;
-    padding: 10px 0;
-    text-decoration: none;
-    color: #000000;
-    background: #ffffff;
-    text-transform: uppercase;
-    transition: 1s;
-    border: 1px solid rgb(255, 255, 255)
-}
-.container:hover ul li a {
-  color: rgb(110, 117, 117);
-  
-}
-.container ul li a:hover {
-    color: rgb(0, 0, 0);
-    transform: scale(1.1);
-    background: #48bbbe;
-    border: 1px solid aqua
-    
-  }
-.container ul li a:hover::before{
-    content: '';
-    width: 0;
-    height: 0;
-    position: absolute;
-    left: -1.5px;
-    top: 12.5px;
-    border-width:0 0 11.5px 11.5px;
-    border-color: transparent transparent aqua transparent;
-
-
-}
-.container ul li a:hover:after{
-    content: '';
-    width: 0;
-    height: 0;
-    position: absolute;
-    right: -1.5px;
-    top: 12.5px;
-    border-width: 11.5px 0 0 11.5px;
-    border-color: transparent transparent transparent  aqua;
-     
-
-}
 
 
 
@@ -510,31 +533,6 @@ body{
 /*****************************/
 
 
-
-
-@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap');
-
-:root{
-    --color-esqueleto:#EFF3F5;
-}
-
-
-.container__article{
-    max-width: 1000px;
-    padding: 0px 20px;
-    margin: auto;
-    margin-top: 20px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-.container__article .box__article{
-    width: 200px;
-    height: 250px;
-    background: var(--color-esqueleto);
-    margin: 20px;
-}
 
 /*AQUI COMIENZA EL FOOTER*/
 
