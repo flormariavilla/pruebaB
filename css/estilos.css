@@ -302,17 +302,18 @@ li .sliderimg img{
 
     /***Novedades**/
     .container__cards{
-        max-width: 1500px;
+        max-width: 1200px;
         margin: auto;
-        margin-top: 100px;
+        margin-top: 0px;
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
+   
     }
     
     .card{
         width: 300px;
-        margin: 10px;
+        margin: 0px;
         transition: all 300ms;
     }
     
@@ -322,17 +323,17 @@ li .sliderimg img{
     
     .card .cover{
         width: 100%;
-        height: 250px;
+        height: 450px;
         position: relative;
         overflow: hidden;
     }
     
     .card .cover img{
-        width: 250px;
+        width: 350px;
         display: block;
         margin: auto;
-        position: relative;
-        top: 40px;
+        position: absolute;
+        top: 50px;
         z-index: 1;
         filter: drop-shadow(5px 5px 4px rgba(0,0,0,0.5));
         transition: all 400ms;
@@ -344,9 +345,10 @@ li .sliderimg img{
     }
     
     .card .img__back{
-        width: 100%;
-        height: 200px;
-        position: absolute;
+        z-index:1;
+        width: 200%;
+        height: 450px;
+        position: relative;
         bottom: -80px;
         left: 0;
         background-size: cover;
@@ -373,11 +375,11 @@ li .sliderimg img{
     }
     
     .card .description{
-        background: white;
+        position: absolute;
         margin-top: -10px;
         padding: 20px;
-        border-radius: 0px 0px 20px 20px;
         transition: all 300ms;
+    
     }
     
     .card:hover .description{
@@ -385,28 +387,23 @@ li .sliderimg img{
     }
     
     .card .description h2{
-        margin-top: 10px;
+        position: absolute;
+        top: 50%;
+        left: 400%;
+        transform: translate(-50%, -50%);
+        top: -100px;
+        color: #000000;
+        margin-top: -0px;
+        z-index: 1;
+     
     }
     
     .card .description p{
-        margin-top: 10px;
+        
+        margin-top: -30px;
     }
     
-    .card .description input{
-        padding: 10px 40px;
-        margin-top: 20px;
-        border: none;
-        background: #080808;
-        color: white;
-        font-size: 14px;
-        cursor: pointer;
-        border-radius: 8px;
-        transition: all 300ms;
-    }
     
-    .card .description input:hover{
-        background: #000000;
-    }
     
 
 }
@@ -439,7 +436,7 @@ body{
     letter-spacing:3px;
 }
 .container{
-    margin-top: -130px;
+    margin-top: -30px;
    display: flex;
     align-items: center;
     justify-content: center;
